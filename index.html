@@ -18,13 +18,14 @@
     <header>
         <div class="container">
             <div class="logo">
-                <img src="img/logo.png" class="logo">
+                <h2>RomanceFlix</h2>
             </div>
             <nav>
                 <a href="#">Início</a>
                 <a href="#">Séries</a>
                 <a href="#">Filmes</a>
                 <a href="#">Documentários</a>
+                <a href="#">Minha Lista</a>
             </nav>
         </div>
     </header>
@@ -36,10 +37,10 @@
                     Lara Jean adora escrever cartas de amor secretas para seus paqueras. Só não contava que um dia elas seriam misteriosamente enviadas!
                 </p>
                 <div class="botoes">
-                    <button role="button" class="botao">
+                    <button role="button" class="botao" id="botao-assistir">
                         <i class="fas fa-play"></i>  Assistir
                     </button>
-                    <button role="button" class="botao">
+                    <button role="button" class="botao" id="botao-informacao">
                         <i class="fas fa-info-circle"></i>  Mais informações
                     </button>
                 </div>
@@ -81,11 +82,44 @@
         </div>
     </div>
 
+    <div class="modal" id="modal-assistir">   
+        <div class="modal-content">
+            <header class="modal-header">
+                <h2>Para Todos Garotos que Já Amei</h2>
+                <i class="fa fa-close" id="botao-close"></i>
+            </header>
+            <iframe width="100%" height="500" src="https://www.youtube.com/embed/CK-g0OqzQHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-informacao">   
+        <div class="modal-content-informacao">
+            <header class="modal-header-informacao">
+                <h2 class="titulo-header">Para Todos os Garotos que Já Amei</h2>
+                <i class="fa fa-close" id="botao-close-informacao"></i>
+            </header>
+            <div class="container">
+                <p class="descricao">
+                    Lara Jean adora escrever cartas de amor secretas para seus paqueras. Só não contava que um dia elas seriam misteriosamente enviadas!
+                </p>
+                <div class="descricao-tecnica">
+                    <p class="texto-tecnico">
+                        <span>Elenco: </span> Lana Condor, Noah Centineo, Janel Parrish, <i>mais</i>
+                    </p>
+                    <p class="texto-tecnico">
+                        <span>Gênero: </span> Romance, Engraçado
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://kit.fontawesome.com/bbe18f51a8.js" crossorigin="anonymous"></script>
 
     <!-- OWL SCRIPT --->
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/owl/setup.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
